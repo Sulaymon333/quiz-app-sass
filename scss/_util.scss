@@ -1,0 +1,42 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 6rem);
+}
+
+.disabled {
+    opacity: 0.5;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.message {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+.info {
+    background: $color-grey-light;
+}
+
+.green-info {
+    background: $color-ascent;
+    color: $color-white;
+}
+.red-info {
+    background: rgb(243, 139, 139);
+    color: $color-white;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.current {
+    font-weight: bold;
+}

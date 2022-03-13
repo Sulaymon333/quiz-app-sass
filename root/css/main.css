@@ -148,16 +148,10 @@ input[type='checkbox'] {
       background: #f2f2f2; }
 
 /* line 113, scss/main.scss */
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 6rem); }
-
-/* line 119, scss/main.scss */
 .question {
   flex: 1; }
 
-/* line 123, scss/main.scss */
+/* line 117, scss/main.scss */
 .response {
   display: flex;
   align-items: center;
@@ -170,7 +164,7 @@ input[type='checkbox'] {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2; }
 
-/* line 136, scss/main.scss */
+/* line 130, scss/main.scss */
 .btn {
   background: transparent;
   outline: none;
@@ -178,12 +172,18 @@ input[type='checkbox'] {
   padding: 0.15rem 0.75rem;
   font-size: 0.95rem;
   font-weight: 400; }
-  /* line 144, scss/main.scss */
+  /* line 138, scss/main.scss */
   .btn-primary {
     color: #ffffff;
     background: #002fff; }
 
-/* line 150, scss/main.scss */
+/* line 1, scss/_util.scss */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 6rem); }
+
+/* line 7, scss/_util.scss */
 .disabled {
   opacity: 0.5;
   border: 1px solid #999999;
@@ -191,36 +191,45 @@ input[type='checkbox'] {
   color: #666666;
   cursor: not-allowed; }
 
-/* line 158, scss/main.scss */
+/* line 15, scss/_util.scss */
 .message {
   padding: 1rem;
   margin-bottom: 1.25rem; }
 
-/* line 162, scss/main.scss */
+/* line 19, scss/_util.scss */
 .info {
   background: #f2f2f2; }
 
-/* line 166, scss/main.scss */
+/* line 23, scss/_util.scss */
 .green-info {
   background: #002fff;
   color: #ffffff; }
 
-/* line 170, scss/main.scss */
+/* line 27, scss/_util.scss */
 .red-info {
   background: #f38b8b;
   color: #ffffff; }
 
-/* line 175, scss/main.scss */
+/* line 32, scss/_util.scss */
 .hidden {
   display: none; }
 
-/* line 179, scss/main.scss */
+/* line 36, scss/_util.scss */
 .show {
   display: block; }
 
-/* line 185, scss/main.scss */
+/* line 40, scss/_util.scss */
+.current {
+  font-weight: bold; }
+
+/* line 148, scss/main.scss */
 .step {
   margin-bottom: 1.5rem; }
-  /* line 188, scss/main.scss */
+  /* line 151, scss/main.scss */
   .step h2 {
     margin-bottom: 0rem; }
+
+/* line 159, scss/main.scss */
+.about-info p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem; }
