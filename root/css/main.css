@@ -222,14 +222,14 @@ input[type='checkbox'] {
 .current {
   font-weight: bold; }
 
-/* line 148, scss/main.scss */
+/* line 147, scss/main.scss */
 .step {
   margin-bottom: 1.5rem; }
-  /* line 151, scss/main.scss */
+  /* line 150, scss/main.scss */
   .step h2 {
     margin-bottom: 0rem; }
 
-/* line 159, scss/main.scss */
+/* line 157, scss/main.scss */
 .about-info p {
   margin-bottom: 1rem;
   font-size: 1.1rem; }
