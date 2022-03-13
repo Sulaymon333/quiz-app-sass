@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="data.js" defer type="module"></script>
+        <script src="app.js" defer type="module"></script>
+    </head>
+    <body>
+        <article class="container">
+            <div class="header">
+                <h1>Quiz app</h1>
+                <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="message hidden"></div>
+            <div class="flex-col">
+                <div class="question">
+                    <h2>Question 1</h2>
+                    <p class="question-text">What is the capital of France?</p>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" name="question-options" value="paris" id="option-1" />
+                            <label for="option-1">Paris</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-options" value="london" id="option-2" />
+                            <label for="option-2">London</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-options" value="berlin" id="option-3" />
+                            <label for="option-3">Berlin</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-options" value="madrid" id="option-4" />
+                            <label for="option-4">Madrid</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="response">
+                    <span id="question-tracker">Question 1 of 5</span>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-secondary" id="btn-skip">Skip question</button>
+                        <button type="button" class="btn btn-primary disabled" id="btn-submit" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>
