@@ -1,0 +1,181 @@
+@import 'base';
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    max-width: 900px;
+}
+
+.side-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $color-grey-light;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+
+    li {
+        margin-bottom: 1.1rem;
+
+        .show-sidebar {
+            width: 18vw;
+            max-width: 300px;
+        }
+
+        a {
+            padding-block: 0.75rem;
+            padding-inline: 1rem;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.question ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem 0;
+
+    li {
+        outline: 1px solid $color-grey;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        label {
+            display: inline-block;
+            margin-left: 0.25rem;
+            flex: 1;
+            padding: 0.75rem;
+            height: 100%;
+        }
+
+        /*gives the radio button white outer ring*/
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 2px;
+            left: -1px;
+            position: relative;
+            background-color: $color-grey-light;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid $color-ascent;
+        }
+
+        /*gives radio button orange fill when clicked*/
+        input[type='radio']:checked:after {
+            width: 18px;
+            height: 18px;
+            border-radius: 18px;
+            top: 2px;
+            left: -2px;
+            position: relative;
+            background-color: $color-ascent;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid $color-white;
+        }
+
+        input[type='radio'] {
+            height: 1.5rem;
+            transform: scale(1.25);
+            margin-left: 0.75rem;
+        }
+        &:hover {
+            background: $color-grey-light;
+        }
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 6rem);
+}
+
+.question {
+    flex: 1;
+}
+
+.response {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    height: 50px;
+    padding-block: 0.25rem;
+    border-top: 1px solid $color-grey-light;
+    border-bottom: 1px solid $color-grey-light;
+}
+
+.btn {
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 0.15rem 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    &-primary {
+        color: $color-white;
+        background: $color-ascent;
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.message {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+.info {
+    background: $color-grey-light;
+}
+
+.green-info {
+    background: $color-ascent;
+    color: $color-white;
+}
+.red-info {
+    background: rgb(243, 139, 139);
+    color: $color-white;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,218 @@
+/* line 8, scss/_base.scss */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+/* line 17, scss/_base.scss */
+body {
+  line-height: 1.6;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+/* line 22, scss/_base.scss */
+ul {
+  list-style: none;
+  padding: 0; }
+
+/* line 27, scss/_base.scss */
+a {
+  text-decoration: none;
+  color: #000; }
+
+/* line 32, scss/_base.scss */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #002fff; }
+
+/* line 39, scss/_base.scss */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+/* line 45, scss/_base.scss */
+button,
+input,
+input[type='checkbox'] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit; }
+
+/* line 3, scss/main.scss */
+.container {
+  width: 80%;
+  margin-inline: auto;
+  max-width: 900px; }
+
+/* line 9, scss/main.scss */
+.side-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px; }
+  /* line 21, scss/main.scss */
+  .side-bar li {
+    margin-bottom: 1.1rem; }
+    /* line 24, scss/main.scss */
+    .side-bar li .show-sidebar {
+      width: 18vw;
+      max-width: 300px; }
+    /* line 29, scss/main.scss */
+    .side-bar li a {
+      padding-block: 0.75rem;
+      padding-inline: 1rem; }
+
+/* line 36, scss/main.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 42, scss/main.scss */
+.menu-btn {
+  font-size: 1.5rem;
+  cursor: pointer; }
+
+/* line 47, scss/main.scss */
+.question-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem; }
+
+/* line 52, scss/main.scss */
+.question ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem 0; }
+  /* line 57, scss/main.scss */
+  .question ul li {
+    outline: 1px solid #282524;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*gives the radio button white outer ring*/
+    /*gives radio button orange fill when clicked*/ }
+    /* line 64, scss/main.scss */
+    .question ul li label {
+      display: inline-block;
+      margin-left: 0.25rem;
+      flex: 1;
+      padding: 0.75rem;
+      height: 100%; }
+    /* line 73, scss/main.scss */
+    .question ul li input[type='radio']:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: 2px;
+      left: -1px;
+      position: relative;
+      background-color: #f2f2f2;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid #002fff; }
+    /* line 88, scss/main.scss */
+    .question ul li input[type='radio']:checked:after {
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+      top: 2px;
+      left: -2px;
+      position: relative;
+      background-color: #002fff;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid #ffffff; }
+    /* line 102, scss/main.scss */
+    .question ul li input[type='radio'] {
+      height: 1.5rem;
+      transform: scale(1.25);
+      margin-left: 0.75rem; }
+    /* line 107, scss/main.scss */
+    .question ul li:hover {
+      background: #f2f2f2; }
+
+/* line 113, scss/main.scss */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 6rem); }
+
+/* line 119, scss/main.scss */
+.question {
+  flex: 1; }
+
+/* line 123, scss/main.scss */
+.response {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  padding-block: 0.25rem;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2; }
+
+/* line 136, scss/main.scss */
+.btn {
+  background: transparent;
+  outline: none;
+  border: 0;
+  padding: 0.15rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 400; }
+  /* line 144, scss/main.scss */
+  .btn-primary {
+    color: #ffffff;
+    background: #002fff; }
+
+/* line 150, scss/main.scss */
+.disabled {
+  opacity: 0.5;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed; }
+
+/* line 158, scss/main.scss */
+.message {
+  padding: 1rem;
+  margin-bottom: 1.25rem; }
+
+/* line 162, scss/main.scss */
+.info {
+  background: #f2f2f2; }
+
+/* line 166, scss/main.scss */
+.green-info {
+  background: #002fff;
+  color: #ffffff; }
+
+/* line 170, scss/main.scss */
+.red-info {
+  background: #f38b8b;
+  color: #ffffff; }
+
+/* line 175, scss/main.scss */
+.hidden {
+  display: none; }
+
+/* line 179, scss/main.scss */
+.show {
+  display: block; }

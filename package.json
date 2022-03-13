@@ -4,7 +4,7 @@
     "description": "A quiz app built with sass",
     "main": "index.js",
     "scripts": {
-        "sass": "node-sass -w scss/ -o dist/css/ -recursive"
+        "sass": "node-sass -w scss/ -o root/css/ -recursive"
     },
     "keywords": [
         "sass",
