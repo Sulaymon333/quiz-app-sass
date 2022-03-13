@@ -21,11 +21,6 @@
     li {
         margin-bottom: 1.1rem;
 
-        .show-sidebar {
-            width: 18vw;
-            max-width: 300px;
-        }
-
         a {
             padding-block: 0.75rem;
             padding-inline: 1rem;
@@ -42,6 +37,11 @@
 .menu-btn {
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.show-sidebar {
+    width: 18vw;
+    max-width: 300px;
 }
 
 .question-text {
@@ -178,4 +178,14 @@
 
 .show {
     display: block;
+}
+
+// instructions page
+
+.step {
+    margin-bottom: 1.5rem;
+
+    h2 {
+        margin-bottom: 0rem;
+    }
 }

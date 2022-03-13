@@ -66,24 +66,25 @@ input[type='checkbox'] {
   .side-bar li {
     margin-bottom: 1.1rem; }
     /* line 24, scss/main.scss */
-    .side-bar li .show-sidebar {
-      width: 18vw;
-      max-width: 300px; }
-    /* line 29, scss/main.scss */
     .side-bar li a {
       padding-block: 0.75rem;
       padding-inline: 1rem; }
 
-/* line 36, scss/main.scss */
+/* line 31, scss/main.scss */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-/* line 42, scss/main.scss */
+/* line 37, scss/main.scss */
 .menu-btn {
   font-size: 1.5rem;
   cursor: pointer; }
+
+/* line 42, scss/main.scss */
+.show-sidebar {
+  width: 18vw;
+  max-width: 300px; }
 
 /* line 47, scss/main.scss */
 .question-text {
@@ -216,3 +217,10 @@ input[type='checkbox'] {
 /* line 179, scss/main.scss */
 .show {
   display: block; }
+
+/* line 185, scss/main.scss */
+.step {
+  margin-bottom: 1.5rem; }
+  /* line 188, scss/main.scss */
+  .step h2 {
+    margin-bottom: 0rem; }

@@ -6,6 +6,7 @@ const questionTracker = document.querySelector('#question-tracker');
 const messageContainer = document.querySelector('.message');
 const questionOptions = questionContainer.getElementsByTagName('input');
 const menuBtn = document.querySelector('.menu-btn');
+const sidebar = document.querySelector('.side-bar');
 
 let index = 0;
 let message = { type: '', text: '' };
@@ -13,7 +14,6 @@ let setMessage = false;
 
 menuBtn.addEventListener('click', () => {
     sidebar.classList.toggle('show-sidebar');
-    mainContent.classList.toggle('push-left');
 });
 
 const nextQuestion = () => {
