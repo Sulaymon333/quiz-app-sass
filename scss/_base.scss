@@ -4,6 +4,7 @@ $color-white: #ffffff;
 $color-black: #050505;
 $color-grey: hsl(5, 5%, 15%);
 $color-grey-light: hsl(0, 0%, 95%);
+$color-grey-light-2: hsl(0, 0%, 75%);
 
 *,
 *::before,
@@ -49,4 +50,26 @@ input[type='checkbox'] {
     font-size: inherit;
     line-height: inherit;
     color: inherit;
+}
+
+// Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
 }

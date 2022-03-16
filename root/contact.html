@@ -30,24 +30,35 @@
                 <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
             </div>
             <div class="message hidden"></div>
-            <div class="flex-col">
-                <div class="step">
-                    <h2>Step 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores exercitationem nam corporis a nemo non cum accusamus, commodi earum, quisquam voluptates asperiores neque minus dolore consequuntur sit in numquam.</p>  
+            <form class="contact-form" action="">
+                <div class="form-title">
+                    <h2>Please enter your details</h2>
+                    <span><b>*</b> Required</span>
                 </div>
-                <div class="step">
-                    <h2>Step 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores exercitationem nam corporis a nemo non cum accusamus, commodi earum, quisquam voluptates asperiores neque minus dolore consequuntur sit in numquam.</p>  
+                <div class="form-group">
+                    <label for="name">Your name*</label>
+                    <input type="text" name="name" id="name" />
                 </div>
-                <div class="step">
-                    <h2>Step 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores exercitationem nam corporis a nemo non cum accusamus, commodi earum, quisquam voluptates asperiores neque minus dolore consequuntur sit in numquam.</p>  
+                <div class="form-group">
+                    <label for="email">Your email*</label>
+                    <input type="email" name="email" id="email" />
                 </div>
-                <div class="step">
-                    <h2>Step 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores exercitationem nam corporis a nemo non cum accusamus, commodi earum, quisquam voluptates asperiores neque minus dolore consequuntur sit in numquam.</p>  
+                <div class="flex-row bottom-row">
+                    <div class="terms">
+                        <input type="checkbox" id="agree" />
+                        <label for="agree">
+                            <small
+                                >I agree that my persoanl information can be processed and stored in accordance to
+                                GDPR</small
+                            >
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button id="reset-btn" class="btn btn-reset" type="reset">Reset</button>
+                        <button id="submit-btn" class="btn btn-primary disabled" disabled type="submit">Submit</button>
+                    </div>
                 </div>
-                
+            </form>
         </article>
     </body>
 </html>

@@ -1,0 +1,47 @@
+// widescreens
+@include mediaXl {
+}
+// desktops and laptops
+@include mediaLg {
+}
+// tablets and small laptops
+@include mediaMd {
+    .contact-form {
+        .form-title {
+            span {
+                font-size: 0.9rem;
+            }
+        }
+        .bottom-row {
+            flex-direction: column;
+
+            .terms {
+                width: 100%;
+                display: flex;
+                label {
+                    font-size: 0.78rem;
+                    flex: 1;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                width: 100%;
+                margin-top: 1.5rem;
+
+                .btn {
+                    font-size: 0.9rem;
+                    padding: 0.25rem 0.5rem;
+                    flex: 1;
+                }
+
+                .btn-reset {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+// smartphones
+@include mediaSm {
+}

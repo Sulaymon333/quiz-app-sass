@@ -4,6 +4,11 @@
     height: calc(100vh - 6rem);
 }
 
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .disabled {
     opacity: 0.5;
     border: 1px solid #999999;

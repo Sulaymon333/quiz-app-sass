@@ -159,3 +159,74 @@
         font-size: 1.1rem;
     }
 }
+
+// contact pack
+.contact-form {
+    color: $color-grey;
+
+    .form-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            color: $color-grey;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid $color-grey-light-2;
+            font-size: 1.05rem;
+            outline: none;
+            font-weight: bold;
+        }
+
+        input:focus {
+            border: 1px solid $color-ascent;
+            outline: 1.75px solid $color-ascent;
+        }
+    }
+
+    .bottom-row {
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .terms {
+            display: flex;
+            align-items: flex-start;
+
+            input[type='checkbox'] {
+                margin-right: 0.5rem;
+            }
+            label {
+                display: inline-block;
+                line-height: 0.8rem;
+                font-size: 0.95rem;
+                max-width: 400px;
+            }
+        }
+
+        .buttons {
+            font-size: 1.05rem;
+
+            .btn {
+                font-size: inherit;
+                padding: 0.5rem 1rem;
+            }
+            .btn-reset {
+                color: $color-ascent;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@import 'mediaquery';
