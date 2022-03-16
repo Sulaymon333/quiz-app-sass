@@ -325,4 +325,5 @@ input[type='checkbox'] {
         flex: 1; }
       /* line 38, scss/_mediaquery.scss */
       .contact-form .bottom-row .buttons .btn-reset {
-        flex: 1; } }
+        flex: 1;
+        order: 2; } }
