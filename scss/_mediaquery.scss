@@ -62,6 +62,17 @@
             }
         }
     }
+
+    .response {
+        span {
+            font-size: 0.85rem;
+        }
+
+        .btn {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.5rem;
+        }
+    }
 }
 // smartphones
 @include mediaSm {

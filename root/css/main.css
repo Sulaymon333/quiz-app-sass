@@ -340,4 +340,11 @@ input[type='checkbox'] {
       /* line 58, scss/_mediaquery.scss */
       .contact-form .bottom-row .buttons .btn-reset {
         flex: 1;
-        order: 2; } }
+        order: 2; }
+  /* line 67, scss/_mediaquery.scss */
+  .response span {
+    font-size: 0.85rem; }
+  /* line 71, scss/_mediaquery.scss */
+  .response .btn {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem; } }
