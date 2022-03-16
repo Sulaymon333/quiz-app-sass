@@ -6,10 +6,30 @@
 }
 // tablets and small laptops
 @include mediaMd {
+    .side-bar {
+        padding-top: 4rem;
+        li {
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .show-sidebar {
+        max-width: 50px;
+    }
+
+    .menu-btn {
+        position: fixed;
+        right: 0.85rem;
+    }
+
     .contact-form {
         .form-title {
             span {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
         }
         .bottom-row {

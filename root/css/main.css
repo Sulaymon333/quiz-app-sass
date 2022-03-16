@@ -61,7 +61,7 @@ input[type='checkbox'] {
   background-color: #f2f2f2;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 30px; }
+  padding-top: 4rem; }
   /* line 21, scss/main.scss */
   .side-bar li {
     margin-bottom: 1.1rem; }
@@ -79,24 +79,25 @@ input[type='checkbox'] {
 /* line 37, scss/main.scss */
 .menu-btn {
   font-size: 1.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
 
-/* line 42, scss/main.scss */
+/* line 43, scss/main.scss */
 .show-sidebar {
   width: 18vw;
   max-width: 300px; }
 
-/* line 47, scss/main.scss */
+/* line 48, scss/main.scss */
 .question-text {
   font-size: 1.2rem;
   margin-bottom: 1rem; }
 
-/* line 52, scss/main.scss */
+/* line 53, scss/main.scss */
 .question ul {
   display: flex;
   flex-direction: column;
   gap: 1.25rem 0; }
-  /* line 57, scss/main.scss */
+  /* line 58, scss/main.scss */
   .question ul li {
     outline: 1px solid #282524;
     font-size: 0.95rem;
@@ -105,14 +106,14 @@ input[type='checkbox'] {
     cursor: pointer;
     /*gives the radio button white outer ring*/
     /*gives radio button orange fill when clicked*/ }
-    /* line 64, scss/main.scss */
+    /* line 65, scss/main.scss */
     .question ul li label {
       display: inline-block;
       margin-left: 0.25rem;
       flex: 1;
       padding: 0.75rem;
       height: 100%; }
-    /* line 73, scss/main.scss */
+    /* line 74, scss/main.scss */
     .question ul li input[type='radio']:after {
       width: 15px;
       height: 15px;
@@ -125,7 +126,7 @@ input[type='checkbox'] {
       display: inline-block;
       visibility: visible;
       border: 2px solid #002fff; }
-    /* line 88, scss/main.scss */
+    /* line 89, scss/main.scss */
     .question ul li input[type='radio']:checked:after {
       width: 18px;
       height: 18px;
@@ -138,20 +139,20 @@ input[type='checkbox'] {
       display: inline-block;
       visibility: visible;
       border: 2px solid #ffffff; }
-    /* line 102, scss/main.scss */
+    /* line 103, scss/main.scss */
     .question ul li input[type='radio'] {
       height: 1.5rem;
       transform: scale(1.25);
       margin-left: 0.75rem; }
-    /* line 107, scss/main.scss */
+    /* line 108, scss/main.scss */
     .question ul li:hover {
       background: #f2f2f2; }
 
-/* line 113, scss/main.scss */
+/* line 114, scss/main.scss */
 .question {
   flex: 1; }
 
-/* line 117, scss/main.scss */
+/* line 118, scss/main.scss */
 .response {
   display: flex;
   align-items: center;
@@ -164,7 +165,7 @@ input[type='checkbox'] {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2; }
 
-/* line 130, scss/main.scss */
+/* line 131, scss/main.scss */
 .btn {
   background: transparent;
   outline: none;
@@ -172,7 +173,7 @@ input[type='checkbox'] {
   padding: 0.15rem 0.75rem;
   font-size: 0.95rem;
   font-weight: 400; }
-  /* line 138, scss/main.scss */
+  /* line 139, scss/main.scss */
   .btn-primary {
     color: #ffffff;
     background: #002fff; }
@@ -227,35 +228,35 @@ input[type='checkbox'] {
 .current {
   font-weight: bold; }
 
-/* line 147, scss/main.scss */
+/* line 148, scss/main.scss */
 .step {
   margin-bottom: 1.5rem; }
-  /* line 150, scss/main.scss */
+  /* line 151, scss/main.scss */
   .step h2 {
     margin-bottom: 0rem; }
 
-/* line 157, scss/main.scss */
+/* line 158, scss/main.scss */
 .about-info p {
   margin-bottom: 1rem;
   font-size: 1.1rem; }
 
-/* line 164, scss/main.scss */
+/* line 165, scss/main.scss */
 .contact-form {
   color: #282524; }
-  /* line 167, scss/main.scss */
+  /* line 168, scss/main.scss */
   .contact-form .form-title {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    /* line 172, scss/main.scss */
+    /* line 173, scss/main.scss */
     .contact-form .form-title span {
       color: #282524; }
-  /* line 177, scss/main.scss */
+  /* line 178, scss/main.scss */
   .contact-form .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem; }
-    /* line 182, scss/main.scss */
+    /* line 183, scss/main.scss */
     .contact-form .form-group input {
       width: 100%;
       padding: 0.5rem;
@@ -263,67 +264,80 @@ input[type='checkbox'] {
       font-size: 1.05rem;
       outline: none;
       font-weight: bold; }
-    /* line 191, scss/main.scss */
+    /* line 192, scss/main.scss */
     .contact-form .form-group input:focus {
       border: 1px solid #002fff;
       outline: 1.75px solid #002fff; }
-  /* line 197, scss/main.scss */
+  /* line 198, scss/main.scss */
   .contact-form .bottom-row {
     margin-top: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    /* line 202, scss/main.scss */
+    /* line 203, scss/main.scss */
     .contact-form .bottom-row .terms {
       display: flex;
       align-items: flex-start; }
-      /* line 206, scss/main.scss */
+      /* line 207, scss/main.scss */
       .contact-form .bottom-row .terms input[type='checkbox'] {
         margin-right: 0.5rem; }
-      /* line 209, scss/main.scss */
+      /* line 210, scss/main.scss */
       .contact-form .bottom-row .terms label {
         display: inline-block;
         line-height: 0.8rem;
         font-size: 0.95rem;
         max-width: 400px; }
-    /* line 217, scss/main.scss */
+    /* line 218, scss/main.scss */
     .contact-form .bottom-row .buttons {
       font-size: 1.05rem; }
-      /* line 220, scss/main.scss */
+      /* line 221, scss/main.scss */
       .contact-form .bottom-row .buttons .btn {
         font-size: inherit;
         padding: 0.5rem 1rem; }
-      /* line 224, scss/main.scss */
+      /* line 225, scss/main.scss */
       .contact-form .bottom-row .buttons .btn-reset {
         color: #002fff;
         font-weight: bold; }
 
 @media screen and (max-width: 768px) {
-  /* line 11, scss/_mediaquery.scss */
+  /* line 9, scss/_mediaquery.scss */
+  .side-bar {
+    padding-top: 4rem; }
+    /* line 13, scss/_mediaquery.scss */
+    .side-bar li a span {
+      display: none; }
+  /* line 20, scss/_mediaquery.scss */
+  .show-sidebar {
+    max-width: 50px; }
+  /* line 24, scss/_mediaquery.scss */
+  .menu-btn {
+    position: fixed;
+    right: 0.85rem; }
+  /* line 31, scss/_mediaquery.scss */
   .contact-form .form-title span {
-    font-size: 0.9rem; }
-  /* line 15, scss/_mediaquery.scss */
+    font-size: 0.8rem; }
+  /* line 35, scss/_mediaquery.scss */
   .contact-form .bottom-row {
     flex-direction: column; }
-    /* line 18, scss/_mediaquery.scss */
+    /* line 38, scss/_mediaquery.scss */
     .contact-form .bottom-row .terms {
       width: 100%;
       display: flex; }
-      /* line 21, scss/_mediaquery.scss */
+      /* line 41, scss/_mediaquery.scss */
       .contact-form .bottom-row .terms label {
         font-size: 0.78rem;
         flex: 1; }
-    /* line 27, scss/_mediaquery.scss */
+    /* line 47, scss/_mediaquery.scss */
     .contact-form .bottom-row .buttons {
       display: flex;
       width: 100%;
       margin-top: 1.5rem; }
-      /* line 32, scss/_mediaquery.scss */
+      /* line 52, scss/_mediaquery.scss */
       .contact-form .bottom-row .buttons .btn {
         font-size: 0.9rem;
         padding: 0.25rem 0.5rem;
         flex: 1; }
-      /* line 38, scss/_mediaquery.scss */
+      /* line 58, scss/_mediaquery.scss */
       .contact-form .bottom-row .buttons .btn-reset {
         flex: 1;
         order: 2; } }
